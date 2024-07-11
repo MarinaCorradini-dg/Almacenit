@@ -149,8 +149,9 @@ h6 {
 --------------------------------------------------------------*/
 .big {
   font-family: "Bricolage Grotesque";
-  font-size: 244px;
+  font-size: 200px;
   font-weight: 100;
+  line-height: 200px;
 }
 
 .header {
