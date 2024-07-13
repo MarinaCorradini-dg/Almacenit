@@ -83,6 +83,7 @@ a {
 a:hover {
   color: color-mix(in srgb, var(--accent-color), transparent 25%);
   text-decoration: none;
+  transition: all 0.3s;
 }
 
 h1,
@@ -913,6 +914,7 @@ section,
   color: var(--contrast-color);
   background: color-mix(in srgb, var(--default-color), transparent 15%);
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
 }
 
 .hero .btn-get-started:hover i {
