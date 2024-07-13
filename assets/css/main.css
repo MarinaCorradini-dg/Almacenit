@@ -152,12 +152,6 @@ h6 {
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
-
-.navmenu a,
-.navmenu a:focus {
-  color: var(--background-color);
-}
-
 .big {
   font-family: "Bricolage Grotesque";
   font-size: 160px;
@@ -250,6 +244,7 @@ h6 {
 /* Index Page Header on Scroll
 ------------------------------*/
 .index-page.scrolled .header {
+  color: rgb(170, 170, 170);
   --nav-hover-color: #FD5309;
   background: linear-gradient(to right, rgba(97, 138, 172, 0.521), white, white);
   backdrop-filter: blur(8px);
@@ -278,7 +273,7 @@ h6 {
 
   .navmenu a,
   .navmenu a:focus {
-    color: var(--nav-color);
+    color: color-mix(in srgb, var(--accent-color) 20%, white); /* Cambiar color de nav bar items */
     padding: 18px 12px;
     font-size: 15px;
     font-family: var(--nav-font);
