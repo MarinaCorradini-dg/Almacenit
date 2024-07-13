@@ -149,9 +149,10 @@ h6 {
 --------------------------------------------------------------*/
 .big {
   font-family: "Bricolage Grotesque";
-  font-size: 200px;
+  font-size: 160px;
   font-weight: 100;
-  line-height: 185px;
+  line-height: 120px;
+  letter-spacing: -5pt;
   margin: -10px;
 }
 
@@ -168,7 +169,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  max-height: 46px;
   margin-right: 8px;
 }
 
@@ -202,6 +203,10 @@ h6 {
     order: 1;
   }
 
+  .header .logo img {
+    max-height: 36px;
+  }
+
   .header .btn-getstarted {
     order: 2;
     margin: 0 15px 0 0;
@@ -210,6 +215,12 @@ h6 {
 
   .header .navmenu {
     order: 3;
+  }
+}
+
+@media (max-width: 768px){
+  .header .logo img {
+    max-height: 26px;
   }
 }
 
@@ -228,7 +239,8 @@ h6 {
 ------------------------------*/
 .index-page.scrolled .header {
   --nav-hover-color: #FD5309;
-  background: #ffffff
+  background: linear-gradient(to right, rgba(97, 138, 172, 0.521), white, white);
+  backdrop-filter: blur(8px);
 }
 
 /*--------------------------------------------------------------
@@ -851,15 +863,15 @@ section,
   padding: 00px 0 00px 0;
   display: flex;
   align-items: center;
-  background: url(../img/hero-bg.png) top center no-repeat;
+  background: url(../img/hero-bg.png) bottom center no-repeat;
   background-size: cover;
 }
 
 .hero h1 {
   margin: 0;
-  font-size: 48px;
+  font-size: 38px;
   font-weight: 400;
-  line-height: 52px;
+  line-height: 42px;
   font-family: "Manrope";
 }
 
