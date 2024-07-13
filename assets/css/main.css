@@ -152,6 +152,12 @@ h6 {
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
+
+.navmenu a,
+.navmenu a:focus {
+  color: var(--background-color);
+}
+
 .big {
   font-family: "Bricolage Grotesque";
   font-size: 160px;
@@ -362,7 +368,7 @@ h6 {
 /* Navmenu - Mobile */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
-    color: var(--nav-color);
+    color: var(--nav-mobile-background-color);
     font-size: 28px;
     line-height: 0;
     margin-right: 10px;
