@@ -169,6 +169,14 @@ h6,
   margin: -9px;
 }
 
+@media (max-width: 640px) {
+  .big {
+    font-size: 100px;
+    line-height: 40px;
+    text-align: center;
+  }
+}
+
 .header {
   color: var(--default-color);
   background: var(--background-color);
@@ -249,11 +257,6 @@ h6,
   backdrop-filter: blur(8px);
 }
 
-.index-page .header .logo img {
-  background: url(assets/img/logo.png);
- }
- 
-
 /* Index Page Header on Scroll
 ------------------------------*/
 .index-page.scrolled .header {
@@ -261,10 +264,6 @@ h6,
   --nav-hover-color: #FD5309;
   background: white;
   backdrop-filter: blur(8px);
-}
-
-.index-page.scrolled .header .logo img {
- background: url(assets/img/logo-fullcolor.png);
 }
 
 /*--------------------------------------------------------------
@@ -902,7 +901,7 @@ section,
 }
 
 .hero p {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
   margin: 5px 0 30px 0;
   font-size: 20px;
   font-weight: 400;
@@ -970,14 +969,17 @@ section,
 
 @media (max-width: 640px) {
   .hero h1 {
+    margin-top: 80px;
     font-size: 28px;
     line-height: 36px;
+    text-align: center;
   }
 
   .hero p {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
+    text-align: center;
   }
   
   .hero {
