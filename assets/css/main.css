@@ -865,9 +865,9 @@ section,
 
 .section-title p {
   color: var(--heading-color);
-  margin: 0px 0 0 0;
+  margin: 10px 0 0 0;
   font-size: 32px;
-  line-height: 20px;
+  line-height: 30px;
   font-weight: 300;
   font-family: var(--heading-font);
 }
@@ -1583,7 +1583,7 @@ bottom: 4rem;
 # Testimonials Section
 --------------------------------------------------------------*/
 .testimonials .testimonial-item {
-  background-image: url(../img/testimonials/1.png);
+  background-image: url(../img/testimonials/3.png);
   background-size: cover;
   background-position: center bottom;
   box-shadow: 0px 0 20px rgba(0, 0, 0, 0.1);
@@ -1596,6 +1596,26 @@ bottom: 4rem;
   text-align: center;
   transition: 0.3s;
   border-radius: 55px;
+}
+
+#ph1{
+  background-image: url(../img/testimonials/1.png);
+}
+
+#ph2{
+  background-image: url(../img/testimonials/2.png);
+}
+
+#ph3{
+  background-image: url(../img/testimonials/4.png);
+}
+
+#ph4{
+  background-image: url(../img/testimonials/5.png);
+}
+
+#ph5{
+  background-image: url(../img/testimonials/6.png);
 }
 
 .testimonials .testimonial-item .stars {
@@ -1617,7 +1637,10 @@ bottom: 4rem;
 .testimonials .testimonial-item h3 {
   font-size: 18px;
   font-weight: bold;
-  margin: 10px 0 5px 0;
+  margin: 0px 0 5px 0;
+  color: white;
+  font-weight: 400;
+  margin-bottom: 10px;
 }
 
 .testimonials .testimonial-item h4 {
@@ -1676,6 +1699,10 @@ bottom: 4rem;
   .testimonials .swiper-slide-next {
     opacity: 1;
     transform: scale(1.12);
+  }
+
+  .testimonials .testimonial-item {
+    margin: 40px 20px;
   }
 }
 
