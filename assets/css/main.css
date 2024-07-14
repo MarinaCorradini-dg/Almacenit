@@ -281,7 +281,7 @@ h6,
 
   .navmenu a,
   .navmenu a:focus {
-    color: color-mix(in srgb, var(--accent-color) 20%, white); /* Cambiar color de nav bar items */
+    color: rgba(17, 17, 17, 0.445); /* Cambiar color de nav bar items */
     padding: 18px 12px;
     font-size: 15px;
     font-family: var(--nav-font);
@@ -878,7 +878,7 @@ section,
   padding: 00px 0 00px 0;
   display: flex;
   align-items: center;
-  background: url(../img/hero-bg.png) bottom center no-repeat;
+  background: url(../img/hero-bg.png)  center center no-repeat;
   background-size: cover;
 }
 
@@ -1228,7 +1228,7 @@ section,
 }
 
 .services .service-item.item-cyan {
-  border-bottom: 3px solid #0dcaf0;
+  border-bottom: 3px solid var(--accent-color);
 }
 
 .services .service-item.item-cyan .icon {
