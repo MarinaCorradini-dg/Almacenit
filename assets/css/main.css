@@ -1198,8 +1198,8 @@ section,
 
 .services .service-item .icon {
   font-size: 36px;
-  padding: 20px 20px;
-  border-radius: 4px;
+  padding: 2px 2px;
+  border-radius: 124px;
   position: relative;
   margin-bottom: 25px;
   display: inline-block;
@@ -1207,9 +1207,32 @@ section,
   transition: 0.3s;
 }
 
+.services .service-item:hover .icon{
+  --color-1: #ff9f22;
+  --color-2: #ffc55b;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px var(--color-1), 0 0 30px var(--color-1), 0 0 40px var(--color-1), 0 0 50px var(--color-1), 0 0 60px var(--color-1);
+  }
+  to {
+    box-shadow: 0 0 8px #fff, 0 0 20px var(--color-2), 0 0 30px var(--color-2), 0 0 40px var(--color-2), 0 0 50px var(--color-2), 0 0 60px var(--color-2), 0 0 70px var(--color-2);
+  }
+}
+
+.services .service-item:hover .icon {
+  background: #fff;
+  transform: scale(1.1);
+}
+
 .services .service-item h3 {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 300;
+  font-family: var(--heading-font);
 }
 
 .services .service-item .read-more {
@@ -1217,6 +1240,7 @@ section,
   align-items: center;
   justify-content: center;
   font-weight: 600;
+  font-family: var(--default-font);
   font-size: 16px;
   padding: 8px 20px;
 }
@@ -1232,16 +1256,16 @@ section,
 }
 
 .services .service-item.item-cyan .icon {
-  color: #0dcaf0;
+  color: var(--accent-color);
   background: rgba(13, 202, 240, 0.1);
 }
 
 .services .service-item.item-cyan .read-more {
-  color: #0dcaf0;
+  color: var(--accent-color);
 }
 
 .services .service-item.item-cyan:hover {
-  background: #0dcaf0;
+  background: linear-gradient(rgba(255, 0, 0, 0), #ff7300, var(--accent-color));
 }
 
 .services .service-item.item-orange {
@@ -1333,10 +1357,6 @@ section,
 .services .service-item:hover p,
 .services .service-item:hover .read-more {
   color: #fff;
-}
-
-.services .service-item:hover .icon {
-  background: #fff;
 }
 
 /*--------------------------------------------------------------
