@@ -249,13 +249,22 @@ h6,
   backdrop-filter: blur(8px);
 }
 
+.index-page .header .logo img {
+  background: url(assets/img/logo.png);
+ }
+ 
+
 /* Index Page Header on Scroll
 ------------------------------*/
 .index-page.scrolled .header {
   color: rgb(170, 170, 170);
   --nav-hover-color: #FD5309;
-  background: linear-gradient(to right, rgba(97, 138, 172, 0.521), white, white);
+  background: white;
   backdrop-filter: blur(8px);
+}
+
+.index-page.scrolled .header .logo img {
+ background: url(assets/img/logo-fullcolor.png);
 }
 
 /*--------------------------------------------------------------
@@ -877,9 +886,11 @@ section,
   position: relative;
   padding: 00px 0 00px 0;
   display: flex;
-  align-items: center;
-  background: url(../img/hero-bg.png)  center center no-repeat;
-  background-size: cover;
+  align-items: center; 
+  background-image: url(../img/marquito-home-bg.png), url(../img/hero-bg.png);
+  background-position: center bottom, center center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
 }
 
 .hero h1 {
@@ -970,16 +981,20 @@ section,
   }
   
   .hero {
-    background: url(../img/hero-bg-mobile.png) top center no-repeat;
-    background-size: cover;
+    background-image: url(../img/marquito-home-bg.png), url(../img/hero-bg-mobile.png);
+    background-position: center bottom, center center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
   }
 
 }
 
 @media (max-width:767px){
   .hero {
-    background: url(../img/hero-bg-mobile.png) top center no-repeat;
-    background-size: cover;
+    background-image: url(../img/marquito-home-bg.png), url(../img/hero-bg-mobile.png);
+    background-position: center bottom, center center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
   }
 }
 
@@ -1188,6 +1203,7 @@ section,
 --------------------------------------------------------------*/
 .services .service-item {
   background: url(../img/white-solid.png);
+  background-size: cover;
   box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
   height: 100%;
   padding: 60px 30px;
@@ -1198,6 +1214,7 @@ section,
 
 .services .service-item:hover {
   background: url(../img/gradient-try.png);
+  background-size: cover;
 }
 
 .services .service-item .icon {
@@ -1259,6 +1276,10 @@ section,
 .services .service-item:hover p,
 .services .service-item:hover .read-more {
   color: #fff;
+}
+
+.btn-final {
+bottom: 4rem;
 }
 
 /*--------------------------------------------------------------
