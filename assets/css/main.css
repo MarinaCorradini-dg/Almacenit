@@ -1583,16 +1583,19 @@ bottom: 4rem;
 # Testimonials Section
 --------------------------------------------------------------*/
 .testimonials .testimonial-item {
-  background-color: var(--surface-color);
+  background-image: url(../img/testimonials/1.png);
+  background-size: cover;
+  background-position: center bottom;
   box-shadow: 0px 0 20px rgba(0, 0, 0, 0.1);
-  box-sizing: content-box;
-  padding: 30px;
+  height: 470px;
+  padding: 50px 20px 50px 20px;
   margin: 40px 30px;
   min-height: 320px;
   display: flex;
   flex-direction: column;
   text-align: center;
   transition: 0.3s;
+  border-radius: 55px;
 }
 
 .testimonials .testimonial-item .stars {
@@ -1600,7 +1603,7 @@ bottom: 4rem;
 }
 
 .testimonials .testimonial-item .stars i {
-  color: #ffc107;
+  color: #ffffff;
   margin: 0 1px;
 }
 
@@ -1625,7 +1628,10 @@ bottom: 4rem;
 
 .testimonials .testimonial-item p {
   font-style: italic;
-  margin: 0 auto 15px auto;
+  padding: 20px;
+  margin: 0 auto 0px auto;
+  background-color: white;
+  border-radius: 40px;
 }
 
 .testimonials .swiper-wrapper {
@@ -2014,6 +2020,7 @@ bottom: 4rem;
   background-color: var(--surface-color);
   padding: 20px;
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+  min-height: 570px;
 }
 
 .service-details .service-box+.service-box {
