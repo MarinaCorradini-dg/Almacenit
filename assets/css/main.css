@@ -1132,6 +1132,10 @@ section,
   max-width: 33%;
 }
 
+.quiz .center-box .content img{
+  margin-bottom: 2rem;
+}
+
 @media (min-width: 768px) {
   .quiz .center-box .content img{
     width: 40%;
@@ -1139,6 +1143,15 @@ section,
   .quiz .center-box .content .btn {
       width: 33%;
   }
+}
+
+@media (≥576px){
+  .quiz-background {
+  background: url(../img/stone-mobile-bg.png);
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+ } 
 }
 
 .quiz .center-box .content .btn-read-more {
