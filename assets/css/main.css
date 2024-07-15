@@ -1014,7 +1014,7 @@ section,
 # About Section
 --------------------------------------------------------------*/
 .about-background {
- background: url(../img/about-bg.png) bottom right no-repeat;
+  background: url(../img/about-bg.png) bottom right no-repeat;
 }
 
 .about .content {
@@ -1081,6 +1081,13 @@ section,
 /*--------------------------------------------------------------
 # Quiz Section
 --------------------------------------------------------------*/
+.quiz-background {
+  background: url(../img/stone-bg.png);
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+ }
+
 .quiz .center-box {
   display: flex;
   flex-direction: column;
@@ -1088,23 +1095,47 @@ section,
   justify-content: center;
   height: 100vh;
   text-align: center;
-  background-color: #059652;
-  border-radius: 643px;
 }
 
 .quiz .content {
-  background-color: magenta;
-  padding: 40px;
+  background: linear-gradient(to bottom, white, #e3dede, #e3dedec2);
+  padding: 30px 40px 40px 40px;
   border-radius: 64px;
 }
 
-.quiz .center-box .content img,
+.quiz .content .section-title{
+  padding-bottom: 10pt;
+}
+
+.quiz .content h3 {
+  color: var(--heading-color);
+  font-size: 28pt;
+  font-weight: 300;
+}
+
+.quiz .content h3 span{
+  color: var(--heading-color);
+  font-size: 44pt;
+  font-weight: 300;
+  line-height: 40pt;
+}
+
+
+.quiz .content p {
+  margin: 15px 0 30px 0;
+  line-height: 16pt;
+  font-size: 12pt;
+}
+
 .quiz .center-box .content .btn {
-  width: 80%;
+  width: 90%;
   max-width: 33%;
 }
+
 @media (min-width: 768px) {
-  .quiz .center-box .content img,
+  .quiz .center-box .content img{
+    width: 40%;
+  }
   .quiz .center-box .content .btn {
       width: 33%;
   }
