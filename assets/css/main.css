@@ -1014,7 +1014,7 @@ section,
 # About Section
 --------------------------------------------------------------*/
 .about-background {
- background: url(../img/about-bg.png) top left no-repeat;
+ background: url(../img/about-bg.png) top right no-repeat;
 }
 
 .about .content {
