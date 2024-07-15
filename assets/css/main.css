@@ -1540,9 +1540,9 @@ html, body {
 # Services Section
 --------------------------------------------------------------*/
 .services {
-background: url(../img/top-services-arc.png), url(../img/fondo-servicios.png) no-repeat;
-background-position: top center, bottom center;
-background-size: cover, 100% auto;
+background: /*url(../img/top-services-arc.png),*/ url(../img/fondo-servicios.png) no-repeat;
+background-position: /*top center,*/ bottom center;
+background-size: /*cover,*/ 100% auto;
 }
 
 .services .services-mar {
