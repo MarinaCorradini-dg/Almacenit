@@ -1542,7 +1542,7 @@ background-size: cover;
   box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
   padding: 40px 20px;
   text-align: center;
-  border-radius: 4px;
+  border-radius: 24px;
   position: relative;
   overflow: hidden;
   transition: 0.3s;
@@ -1555,6 +1555,15 @@ background-size: cover;
     box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
   }
 }
+
+.pricing h2 {
+  color: rgba(255, 255, 255, 0.315);
+}
+
+.pricing p {
+  color: var(--contrast-color);
+}
+
 
 .pricing h3 {
   font-weight: 700;
