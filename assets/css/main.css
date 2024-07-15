@@ -1443,8 +1443,13 @@ section,
   }
 }
 
+.services .service-item p {
+  font-size: 15px;
+
+}
+
 .services .service-item h3 {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 300;
   font-family: var(--heading-font);
 }
