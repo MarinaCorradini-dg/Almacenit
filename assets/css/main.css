@@ -1261,7 +1261,9 @@ section,
 # Map Section
 --------------------------------------------------------------*/
 .map-background {
-  background: linear-gradient(to right top, #91bfd8, #91bfd8, #91bfd8, white);
+  background-image: url(../img/map-bg.png);
+  background-position: center bottom;
+  background-size: 140%;
 }
 
 .map .img-illu {
@@ -1334,7 +1336,7 @@ section,
 .features.section{
   background-image: url(../img/features-bg.png);
   background-position: center bottom;
-  background-size: cover;
+  background-size: 140%;
 }
 
 .features .feature-box {
@@ -1400,6 +1402,11 @@ section,
 .services {
 background: url(../img/top-services-arc.png) top center no-repeat;
 background-size: cover;
+margin-bottom: 40px;
+}
+
+.services .services-mar {
+  margin-top: 40px;
 }
 
 .services .service-item {
