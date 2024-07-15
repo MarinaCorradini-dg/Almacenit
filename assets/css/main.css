@@ -1085,7 +1085,7 @@ section,
   background: url(../img/stone-bg.png);
   background-position: center; 
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
  }
 
 .quiz .center-box {
@@ -1145,7 +1145,7 @@ section,
   }
 }
 
-@media (≥576px){
+@media (max-width: 576px){
   .quiz-background {
   background: url(../img/stone-mobile-bg.png);
   background-position: center; 
@@ -1269,15 +1269,13 @@ section,
 }
 
 .map .content {
-  background-color: color-mix(in srgb, var(--maru-bg-about), transparent 25%);
   padding: 40px;
-  border-radius: 64px 0px 64px 0px;
 }
 
 .map .content h3 {
   font-size: 14px;
   font-weight: 700;
-  color: var(--accent-color);
+  color: white;
   text-transform: uppercase;
 }
 
